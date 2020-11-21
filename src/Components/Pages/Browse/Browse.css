@@ -54,12 +54,12 @@
 	padding: 2vmin;
 }
 .browse > ul > li:nth-child(1n) > div {
-	background: #000;
-	color: #fff;
-}
-.browse > ul > li:nth-child(2n) > div {
 	background: #fafafa;
 	color: #000;
+}
+.browse > ul > li:nth-child(2n) > div {
+	background: #000;
+	color: #fff;
 }
 .browse > ul > li > div .name {
 	width: 35vmin;
