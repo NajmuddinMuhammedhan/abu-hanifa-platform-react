@@ -1,5 +1,4 @@
 nav {
-	/*background: #f0f;*/
 	padding: 2vmin 4vmin;
 	display: flex;
 	justify-content: space-between;
@@ -100,4 +99,42 @@ nav .menu > li:hover > div {
 nav .menu > li > div > ul > li > button:not(:disabled):hover {
 	background: #f8f7ff;
 	color: #000;
+}
+
+@media screen and (max-height: 961px) {
+	nav .menu > li > button {
+		font-size: 4vmin;
+		padding: 2vmin;
+		border: 0.7vmin solid transparent;
+	}
+	nav .menu > li > button svg {
+		width: 6vmin;
+		height: 6vmin;
+	}
+	nav .menu > li > button svg + span {
+		margin-left: 2.5vmin;
+	}
+	nav .menu > li > button span + svg {
+		margin-left: 2.5vmin;
+	}
+	nav .menu > li > div > ul {
+		padding: 2.5vmin 0;
+	}
+	nav .menu > li > div > ul > li > button {
+		font-size: 3.5vmin;
+		padding: 2vmin 3vmin;
+	}
+	nav .menu > li > div > ul > li > span {
+		font-size: 3.5vmin;
+	}
+	nav .menu > li > div > ul > li > button svg {
+		width: 5vmin;
+		height: 5vmin;
+	}
+	nav .menu > li > div > ul > li > button svg + span {
+		margin-left: 3vmin;
+	}
+	nav .menu > li > div > ul > li > button span + svg {
+		margin-left: 3vmin;
+	}
 }
