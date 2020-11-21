@@ -110,6 +110,10 @@ nav .menu > li > div > ul > li > button.color-1:hover {
 }
 
 @media screen and (max-width: 961px) {
+	nav {
+		justify-content: center;
+		align-items: center;
+	}
 	nav .menu > li > button {
 		font-size: 5vmin;
 		padding: 3vmin;
