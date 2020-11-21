@@ -1,0 +1,103 @@
+nav {
+	/*background: #f0f;*/
+	padding: 2vmin 4vmin;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav .menu {
+	display: flex;
+}
+nav .menu > li {
+	position: relative;
+	white-space: nowrap;
+}
+nav .menu > li {
+	margin: 0 0.5vmin;
+}
+nav .menu > li:first-child {
+	margin: 0 0.5vmin 0 0;
+}
+nav .menu > li:last-child {
+	margin: 0 0 0 0.5vmin;
+}
+nav .menu > li > button {
+	font-size: 2.5vmin;
+	padding: 1vmin 2vmin;
+	border: 0.5vmin solid transparent;
+	background: #fff;
+	color: #240046;
+	border-radius: 1vmin;
+	align-items: center;
+	transition: border-color 250ms ease, color 250ms ease;
+}
+nav .menu > li > button svg {
+	width: 4vmin;
+	height: 4vmin;
+	fill: currentColor;
+}
+nav .menu > li > button svg + span {
+	margin-left: 2vmin;
+}
+nav .menu > li > button span + svg {
+	margin-left: 2vmin;
+}
+nav .menu > li:hover > button {
+	border-color: #000;
+	color: #000;
+}
+nav .menu > li > div {
+	position: absolute;
+	top: 100%;
+	min-width: 100%;
+	padding: 1vmin 0 0;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 250ms ease;
+}
+nav .menu > li > div > ul {
+	background: #fff;
+	filter: drop-shadow(0 0 0.5vmin rgba(0,0,0,0.3));
+	border-radius: 1vmin;
+	padding: 2vmin 0;
+}
+nav .menu.left > li > div {
+	left: 0;
+}
+nav .menu.right > li > div {
+	right: 0;
+}
+nav .menu > li > div > ul > li > button {
+	font-size: 2vmin;
+	padding: 1vmin 2vmin;
+	align-items: center;
+	justify-content: space-between;
+	color: #586f7c;
+}
+nav .menu > li > div > ul > li > span {
+	font-size: 2vmin;
+	color: #adb5bd;
+	padding: 2vmin 2vmin 4vmin;
+	border-bottom: 0.3vmin solid #b8dbd9;
+	margin-bottom: 2vmin;
+	display: flex;
+}
+nav .menu > li > div > ul > li > button svg {
+	width: 3vmin;
+	height: 3vmin;
+	fill: currentColor;
+}
+nav .menu > li > div > ul > li > button svg + span {
+	margin-left: 2vmin;
+}
+nav .menu > li > div > ul > li > button span + svg {
+	margin-left: 2vmin;
+}
+nav .menu > li:hover > div {
+	pointer-events: inherit;
+	opacity: 1;
+}
+nav .menu > li > div > ul > li > button:not(:disabled):hover {
+	background: #f8f7ff;
+	color: #000;
+}
