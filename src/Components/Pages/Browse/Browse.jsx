@@ -5,11 +5,11 @@ function Browse () {
 
 	const browseRef = useRef()
 	const [index, setIndex] = useState(0)
-	const [width, setWidth] = useState(window.innerWidth > 960 ? 25 : 50)
+	const [width, setWidth] = useState(window.innerWidth > 960 ? 25 : 100)
 	const items = 100 / width | 0
 	const count = 10
 
-	const resize = e => e.target.innerWidth > 960 ? setWidth(25) : setWidth(50)
+	const resize = e => e.target.innerWidth > 960 ? setWidth(25) : setWidth(100)
 
 	useEffect(() => {
 
