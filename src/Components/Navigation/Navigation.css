@@ -25,7 +25,7 @@ nav .menu > li > button {
 	padding: 1vmin 2vmin;
 	border: 0.5vmin solid transparent;
 	background: #fff;
-	color: #240046;
+	color: #14213d;
 	border-radius: 1vmin;
 	align-items: center;
 	transition: border-color 250ms ease, color 250ms ease;
@@ -103,13 +103,13 @@ nav .menu > li > div > ul > li > button:not(:disabled):hover {
 
 @media screen and (max-height: 961px) {
 	nav .menu > li > button {
-		font-size: 4vmin;
-		padding: 2vmin;
+		font-size: 5vmin;
+		padding: 3vmin;
 		border: 0.7vmin solid transparent;
 	}
 	nav .menu > li > button svg {
-		width: 6vmin;
-		height: 6vmin;
+		width: 7vmin;
+		height: 7vmin;
 	}
 	nav .menu > li > button svg + span {
 		margin-left: 2.5vmin;
@@ -121,15 +121,16 @@ nav .menu > li > div > ul > li > button:not(:disabled):hover {
 		padding: 2.5vmin 0;
 	}
 	nav .menu > li > div > ul > li > button {
-		font-size: 3.5vmin;
-		padding: 2vmin 3vmin;
+		font-size: 4vmin;
+		padding: 4vmin;
 	}
 	nav .menu > li > div > ul > li > span {
-		font-size: 3.5vmin;
+		font-size: 4vmin;
+		padding: 4vmin 4vmin 6vmin;
 	}
 	nav .menu > li > div > ul > li > button svg {
-		width: 5vmin;
-		height: 5vmin;
+		width: 7vmin;
+		height: 7vmin;
 	}
 	nav .menu > li > div > ul > li > button svg + span {
 		margin-left: 3vmin;
