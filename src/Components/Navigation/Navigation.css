@@ -97,7 +97,7 @@ nav .menu > li:hover > div {
 	opacity: 1;
 }
 nav .menu > li > div > ul > li > button.color-1 {
-	background: #84dcc6;
+	background: #ecf8f8;
 	color: #000;
 }
 nav .menu > li > div > ul > li > button:not(:disabled):not(.color-1):hover {
@@ -106,7 +106,7 @@ nav .menu > li > div > ul > li > button:not(:disabled):not(.color-1):hover {
 }
 
 nav .menu > li > div > ul > li > button.color-1:hover {
-	background: #62cbb5;
+	background: #dbf5f5;
 }
 
 @media screen and (max-width: 961px) {
@@ -125,12 +125,16 @@ nav .menu > li > div > ul > li > button.color-1:hover {
 	nav .menu > li > button span + svg {
 		margin-left: 2.5vmin;
 	}
+	nav .menu > li > div {
+		padding: 2vmin 0 0;
+	}
 	nav .menu > li > div > ul {
 		padding: 2.5vmin 0;
 	}
 	nav .menu > li > div > ul > li > button {
 		font-size: 4vmin;
 		padding: 4vmin;
+		color: #000;
 	}
 	nav .menu > li > div > ul > li > span {
 		font-size: 4vmin;
