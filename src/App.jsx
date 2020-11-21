@@ -14,19 +14,12 @@ function App() {
 			<Navigation />
 			<main>
 				<Switch>
-					<Route path="/" component={Home} exact />
+					<Route path="/" component={Browse} exact />
 					<Route path="/login" component={Login} exact />
 					<Route path="/join" component={Join} exact />
-					<Route path="/browse" component={Browse} exact />
 				</Switch>
 			</main>
 		</>
-	)
-}
-
-function Home () {
-	return (
-		<main></main>
 	)
 }
 
