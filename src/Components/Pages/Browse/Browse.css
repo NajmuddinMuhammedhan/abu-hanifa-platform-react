@@ -4,7 +4,7 @@
 	flex: 1 0 auto;
 	overflow: hidden;
 	position: relative;
-	margin: 2vmin 0 4vmin;
+	margin: 2vmin 0 10vmin;
 	--width: 0;
 	--move: 0;
 	--offset: 4vmin;
@@ -12,22 +12,22 @@
 .browse > .left,
 .browse > .right {
 	position: absolute;
-	bottom: 2vmin;
+	top: 10vmin;
 	border-radius: 1vmin;
-	color: white;
+	color: #fff;
 	mix-blend-mode: difference;
 }
 .browse > .left svg,
 .browse > .right svg {
-	width: 5vmin;
-	height: 5vmin;
+	width: 8vmin;
+	height: 8vmin;
 	fill: currentColor;
 }
 .browse > .left {
-	left: 6vmin;
+	left: 10vmin;
 }
 .browse > .right {
-	right: 6vmin;
+	right: 10vmin;
 }
 .browse > ul {
 	display: flex;
@@ -42,47 +42,49 @@
 	width: calc(var(--width));
 	flex-shrink: 0;
 	display: flex;
-	padding: 0 var(--offset);
+	padding: var(--offset);
 }
 .browse > ul > li > div {
-	font-size: 10vmin;
+	text-transform: uppercase;
 	border-radius: 1vmin;
 	display: flex;
 	flex: 1 0 auto;
 	align-items: center;
 	justify-content: center;
-	padding: 6vmin;
+	padding: 2vmin;
 }
 .browse > ul > li:nth-child(1n) > div {
-	background: red;
-	color: white;
+	background: #000;
+	color: #fff;
 }
 .browse > ul > li:nth-child(2n) > div {
-	background: green;
-	color: white;
+	background: #fafafa;
+	color: #000;
 }
-.browse > ul > li:nth-child(3n) > div {
-	background: blue;
-	color: white;
-}
-.browse > ul > li:nth-child(4n) > div {
-	background: orange;
-	color: black;
-}
-.browse > ul > li:nth-child(5n) > div {
-	background: pink;
-	color: black;
-}
-.browse > ul > li:nth-child(6n) > div {
-	background: teal;
-	color: white;
-}
-.browse > ul > li:nth-child(7n) > div {
-	background: aqua;
-	color: black;
+.browse > ul > li > div .name {
+	width: 35vmin;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	font-size: 4vmin;
+	font-weight: bold;
+	-webkit-box-reflect: below -1vmin linear-gradient(to bottom, transparent, rgba(0,0,0,0.1));
 }
 @media screen and (max-width: 961px) {
-	.browse {
-		/*--offset: 0;*/
+	.browse > .left,
+	.browse > .right {
+		top: calc(50% - 7.5vmin);
+	}
+	.browse > .left {
+		left: 12vmin;
+	}
+	.browse > .right {
+		right: 12vmin;
+	}
+	.browse > .left svg,
+	.browse > .right svg {
+		width: 15vmin;
+		height: 15vmin;
 	}
 }

@@ -47,34 +47,54 @@ function Browse () {
 			<div ref={browseRef} className="browse">
 				<ul>
 					<li>
-						<div>1</div>
+						<div>
+							<h1 className="name">Odob</h1>
+						</div>
 					</li>
 					<li>
-						<div>2</div>
+						<div>
+							<h1 className="name">Tajvid</h1>
+						</div>
 					</li>
 					<li>
-						<div>3</div>
+						<div>
+							<h1 className="name">Fiqh</h1>
+						</div>
 					</li>
 					<li>
-						<div>4</div>
+						<div>
+							<h1 className="name">Tahorat</h1>
+						</div>
 					</li>
 					<li>
-						<div>5</div>
+						<div>
+							<h1 className="name">Siyrat</h1>
+						</div>
 					</li>
 					<li>
-						<div>6</div>
+						<div>
+							<h1 className="name">Nikoh</h1>
+						</div>
 					</li>
 					<li>
-						<div>7</div>
+						<div>
+							<h1 className="name">Meros taqsimlash</h1>
+						</div>
 					</li>
 					<li>
-						<div>8</div>
+						<div>
+							<h1 className="name">Xaj Saboqlari</h1>
+						</div>
 					</li>
 					<li>
-						<div>9</div>
+						<div>
+							<h1 className="name">Islomiy Moliya</h1>
+						</div>
 					</li>
 					<li>
-						<div>10</div>
+						<div>
+							<h1 className="name">Hadis ilmlari</h1>
+						</div>
 					</li>
 				</ul>
 				<button className="left" onClick={() => setIndex(index + 1)}>
