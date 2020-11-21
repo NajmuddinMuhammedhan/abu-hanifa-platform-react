@@ -97,8 +97,8 @@ nav .menu > li:hover > div {
 	opacity: 1;
 }
 nav .menu > li > div > ul > li > button.color-1 {
-	background: #000;
-	color: #fff;
+	background: #84dcc6;
+	color: #000;
 }
 nav .menu > li > div > ul > li > button:not(:disabled):not(.color-1):hover {
 	background: #f8f7ff;
@@ -106,8 +106,7 @@ nav .menu > li > div > ul > li > button:not(:disabled):not(.color-1):hover {
 }
 
 nav .menu > li > div > ul > li > button.color-1:hover {
-	background: #000;
-	color: #00b4d8;
+	background: #62cbb5;
 }
 
 @media screen and (max-width: 961px) {
