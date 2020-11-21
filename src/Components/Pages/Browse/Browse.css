@@ -1,0 +1,88 @@
+.browse {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	overflow: hidden;
+	position: relative;
+	margin: 2vmin 0 4vmin;
+	--width: 0;
+	--move: 0;
+	--offset: 4vmin;
+}
+.browse > .left,
+.browse > .right {
+	position: absolute;
+	bottom: 2vmin;
+	border-radius: 1vmin;
+	color: white;
+	mix-blend-mode: difference;
+}
+.browse > .left svg,
+.browse > .right svg {
+	width: 5vmin;
+	height: 5vmin;
+	fill: currentColor;
+}
+.browse > .left {
+	left: 6vmin;
+}
+.browse > .right {
+	right: 6vmin;
+}
+.browse > ul {
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 0;
+	flex: 1 0 auto;
+	will-change: transform;
+	transform: translateX(var(--move));
+	transition: transform 700ms cubic-bezier(0.76, 0, 0.24, 1);
+}
+.browse > ul > li {
+	width: calc(var(--width));
+	flex-shrink: 0;
+	display: flex;
+	padding: 0 var(--offset);
+}
+.browse > ul > li > div {
+	font-size: 10vmin;
+	border-radius: 1vmin;
+	display: flex;
+	flex: 1 0 auto;
+	align-items: center;
+	justify-content: center;
+	padding: 6vmin;
+}
+.browse > ul > li:nth-child(1n) > div {
+	background: red;
+	color: white;
+}
+.browse > ul > li:nth-child(2n) > div {
+	background: green;
+	color: white;
+}
+.browse > ul > li:nth-child(3n) > div {
+	background: blue;
+	color: white;
+}
+.browse > ul > li:nth-child(4n) > div {
+	background: orange;
+	color: black;
+}
+.browse > ul > li:nth-child(5n) > div {
+	background: pink;
+	color: black;
+}
+.browse > ul > li:nth-child(6n) > div {
+	background: teal;
+	color: white;
+}
+.browse > ul > li:nth-child(7n) > div {
+	background: aqua;
+	color: black;
+}
+@media screen and (max-width: 961px) {
+	.browse {
+		/*--offset: 0;*/
+	}
+}

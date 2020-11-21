@@ -53,6 +53,7 @@ nav .menu > li > div {
 	pointer-events: none;
 	opacity: 0;
 	transition: opacity 250ms ease;
+	z-index: 1;
 }
 nav .menu > li > div > ul {
 	background: #fff;
