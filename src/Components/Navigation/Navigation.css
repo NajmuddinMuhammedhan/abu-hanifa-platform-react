@@ -96,9 +96,18 @@ nav .menu > li:hover > div {
 	pointer-events: inherit;
 	opacity: 1;
 }
-nav .menu > li > div > ul > li > button:not(:disabled):hover {
+nav .menu > li > div > ul > li > button.color-1 {
+	background: #000;
+	color: #fff;
+}
+nav .menu > li > div > ul > li > button:not(:disabled):not(.color-1):hover {
 	background: #f8f7ff;
 	color: #000;
+}
+
+nav .menu > li > div > ul > li > button.color-1:hover {
+	background: #000;
+	color: #00b4d8;
 }
 
 @media screen and (max-height: 961px) {
