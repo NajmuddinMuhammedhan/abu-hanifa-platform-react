@@ -46,7 +46,7 @@
 }
 .browse > ul > li > div {
 	text-transform: uppercase;
-	border-radius: 1vmin;
+	border-radius: 3vmin;
 	display: flex;
 	flex: 1 0 auto;
 	align-items: center;
@@ -86,5 +86,8 @@
 	.browse > .right svg {
 		width: 15vmin;
 		height: 15vmin;
+	}
+	.browse > ul > li > div {
+		border-radius: 5vmin;
 	}
 }
