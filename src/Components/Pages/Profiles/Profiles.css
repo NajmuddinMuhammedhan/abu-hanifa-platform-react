@@ -5,6 +5,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 4vmin;
 }
 .profiles > ul {
 	display: flex;
@@ -16,8 +17,9 @@
 .profiles > ul li {
 	border: 0.5vmin solid black;
 	margin: 2vmin;
-	padding: 10vmin;
+	padding: 8vmin;
 	position: relative;
+	min-width: 30%;
 }
 .profiles > ul .delete,
 .profiles > ul .edit {
