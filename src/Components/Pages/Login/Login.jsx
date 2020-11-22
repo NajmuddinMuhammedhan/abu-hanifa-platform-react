@@ -41,7 +41,7 @@ function Login () {
 									</label>
 									<input id="password" type="password" placeholder="كلمه السر" autoComplete="off" />
 								</div>
-								<button type="button" onClick={() => route('/browse')}>
+								<button type="button" onClick={() => route('/profiles')}>
 									<span>تسجيل الدخول</span>
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 										<path d="M501.333,245.325H10.667C4.779,245.325,0,250.104,0,255.992s4.779,10.667,10.667,10.667h490.667 c5.888,0,10.667-4.779,10.667-10.667S507.221,245.325,501.333,245.325z"/>

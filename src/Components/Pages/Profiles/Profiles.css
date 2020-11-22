@@ -1,0 +1,61 @@
+.profiles {
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.profiles > ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.profiles > ul li {
+	border: 0.5vmin solid black;
+	margin: 2vmin;
+	padding: 10vmin;
+	position: relative;
+}
+.profiles > ul .delete,
+.profiles > ul .edit {
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: inherit;
+	margin: 2vmin;
+	border-radius: 50%;
+}
+.profiles > ul .edit {
+	right: inherit;
+	top: inherit;
+	bottom: 0;
+	left: 0;
+}
+.profiles > ul .delete svg,
+.profiles > ul .edit svg {
+	width: 4vmin;
+	height: 4vmin;
+	fill: currentColor;
+	opacity: 0.5;
+	transition: opacity 300ms ease;
+}
+.profiles > ul .edit:hover svg,
+.profiles > ul .delete:hover svg {
+	opacity: 1;
+}
+.profiles > ul .profile {
+	font-size: 5vmin;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.profiles > ul .profile svg {
+	width: 15vmin;
+	height: 15vmin;
+	margin-bottom: 2vmin;
+}
