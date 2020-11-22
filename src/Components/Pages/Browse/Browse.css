@@ -4,7 +4,7 @@
 	flex: 1 0 auto;
 	overflow: hidden;
 	position: relative;
-	margin: 2vmin 0 10vmin;
+	margin: 3vmin 0;
 	--width: 0;
 	--move: 0;
 	--offset: 4vmin;
@@ -43,35 +43,63 @@
 	flex-shrink: 0;
 	display: flex;
 	padding: var(--offset);
+	border-radius: 3vmin;
+	overflow: hidden;
 }
-.browse > ul > li > div {
+.browse > ul > li > button {
 	text-transform: uppercase;
 	border-radius: 3vmin;
 	display: flex;
+	flex-direction: column;
 	flex: 1 0 auto;
 	align-items: center;
 	justify-content: center;
 	padding: 2vmin;
+	overflow: hidden;
+	border: 0.5vmin solid black;
 }
-.browse > ul > li:nth-child(1n) > div {
-	background: #fafafa;
+.browse > ul > li:nth-child(1n) > button {
+	background: #fff;
 	color: #000;
 }
-.browse > ul > li:nth-child(2n) > div {
+.browse > ul > li:nth-child(2n) > button {
 	background: #000;
 	color: #fff;
 }
-.browse > ul > li > div .name {
-	width: 35vmin;
+.browse > ul > li > button:hover svg {
+	transform: translateY(-200%);
+	opacity: 0;
+}
+.browse > ul > li > button:hover .name {
+	transform: translateY(-150%) scale(1.2);
+}
+.browse > ul > li > button .name {
+	width: 85vmin;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-align: center;
-	font-size: 4vmin;
+	font-size: 7vmin;
+	margin: 0 0 4vmin 0;
 	font-weight: bold;
+	color: #fff;
+	will-change: transform;
+	transition: transform 300ms ease;
+	mix-blend-mode: difference;
 	-webkit-box-reflect: below -1vmin linear-gradient(to bottom, transparent, rgba(0,0,0,0.1));
 }
+.browse > ul > li > button svg {
+	margin: 0 0 5vmin 0;
+	width: 25vmin;
+	height: 25vmin;
+	fill: currentColor;
+	will-change: transform;
+	transition: transform 500ms ease, opacity 100ms ease;
+}
 @media screen and (max-width: 961px) {
+	.browse {
+		margin: 0;
+	}
 	.browse > .left,
 	.browse > .right {
 		top: calc(50% - 7.5vmin);
@@ -87,7 +115,10 @@
 		width: 15vmin;
 		height: 15vmin;
 	}
-	.browse > ul > li > div {
+	.browse > ul > li > button {
 		border-radius: 5vmin;
+	}
+	.browse > ul > li > button .name {
+		width: 120vmin;
 	}
 }
