@@ -10,17 +10,6 @@ const Localization = {
 			forgotPassword: 'هل نسيت كلمة المرور؟',
 		},
 	},
-	uz: {
-		login: {
-			email: 'Email',
-			password: 'Parol',
-			enter: 'Kirish',
-		},
-		common: {
-			needHelp: 'Yordam kerakmi?',
-			forgotPassword: 'Parolni unutdingizmi?',
-		},
-	},
 	tr: {
 		login: {
 			email: 'E-posta',
@@ -32,5 +21,17 @@ const Localization = {
 			forgotPassword: 'Parolanızı mı unuttunuz?',
 		},
 	},
+	uz: {
+		login: {
+			email: 'Email',
+			password: 'Parol',
+			enter: 'Kirish',
+		},
+		common: {
+			needHelp: 'Yordam kerakmi?',
+			forgotPassword: 'Parolni unutdingizmi?',
+		},
+	},
 }
+
 export default Localization
