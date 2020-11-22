@@ -1,5 +1,4 @@
 import { useRef, useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
 import './Syllabus.css'
 
 function Syllabus () {
@@ -7,8 +6,6 @@ function Syllabus () {
 	const subjectsRef = useRef()
 	const [index, setIndex] = useState(0)
 	const count = 1
-
-	const { push: route } = useHistory()
 
 	useEffect(() => {
 		subjectsRef.current.style.setProperty('--move-s', (index * 100) + '%')
