@@ -26,6 +26,18 @@ button {
 	background: transparent;
 	cursor: pointer;
 }
+input {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+	display: flex;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+label {
+	cursor: pointer;
+}
 button:disabled {
 	opacity: 0.5;
 	cursor: default;

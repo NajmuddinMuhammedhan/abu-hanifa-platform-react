@@ -2,6 +2,8 @@ import { useRef, useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import './Browse.css'
 import useKeyPress from '../../../Hooks/useKeyPress'
+import Navigation from '../../Navigation/Navigation'
+import Footer from '../../Footer/Footer'
 
 function Browse () {
 
@@ -61,6 +63,7 @@ function Browse () {
 
 	return (
 		<>
+			<Navigation />
 			<div ref={browseRef} className="browse">
 				<ul>
 					<li>
@@ -119,6 +122,7 @@ function Browse () {
 					</svg>
 				</button>
 			</div>
+			<Footer />
 		</>
 	)
 }

@@ -90,6 +90,22 @@
 	height: 40vh;
 	overflow-y: auto;
 }
+.no-subject {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 0.5vmin dashed black;
+	border-top: 0.5vmin solid black;
+	padding: 8vmin 4vmin;
+}
+.no-subject svg {
+	width: 20vmin;
+	height: 20vmin;
+	fill: #d0d0d0;
+	margin-bottom: 3vmin;
+}
 .lectures li {
 	padding: 0.5vmin 4vmin;
 }
