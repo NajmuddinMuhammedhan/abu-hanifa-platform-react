@@ -25,7 +25,7 @@ function Syllabus () {
 
 	return (
 		<div className="syllabus">
-			<h1 className="courseName">التمويل الإسلامي</h1>
+			<h1 className="courseName">التجويد</h1>
 			<div ref={subjectsRef} className="subjects">
 				<ul>
 					<li>

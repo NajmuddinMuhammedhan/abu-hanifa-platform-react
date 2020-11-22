@@ -8,6 +8,7 @@
 	padding: 4vmin;
 }
 .syllabus .courseName {
+	font-size: 7vmin;
 	background: #88b388;
 	padding: 2vmin 4vmin;
 	border: 0.5vmin solid black;
@@ -77,7 +78,7 @@
 	margin-right: 2vmin;
 }
 .syllabus .subjects > ul > li > button span {
-	font-size: 4vmin;
+	font-size: 5vmin;
 	text-transform: uppercase;
 }
 .lectures {
@@ -124,4 +125,33 @@
 	fill: currentColor;
 	will-change: transform;
 	transition: transform 300ms ease;
+}
+@media screen and (max-width: 961px) {
+	.syllabus .subjects > .left,
+	.syllabus .subjects > .right {
+		top: calc(50% - 5vmin);
+	}
+	.syllabus .subjects > .left svg,
+	.syllabus .subjects > .right svg {
+		width: 10vmin;
+		height: 10vmin;
+	}
+	.syllabus .subjects > .left {
+		left: 6vmin;
+	}
+	.syllabus .subjects > .right {
+		right: 6vmin;
+	}
+	.lectures li button {
+		padding: 1vmin;
+	}
+	.lectures li button span {
+		font-size: 5vmin;
+		width: 80vmin;
+		margin-left: 3vmin;
+	}
+	.lectures li button svg {
+		width: 10vmin;
+		height: 10vmin;
+	}
 }
