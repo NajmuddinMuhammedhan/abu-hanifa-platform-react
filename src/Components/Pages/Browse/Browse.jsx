@@ -16,7 +16,8 @@ function Browse () {
 	const leftKeyPress = useKeyPress(37)
 	const rightKeyPress = useKeyPress(39)
 
-	const { push: route } = useHistory()
+	const { push } = useHistory()
+	const route = path => setTimeout(() => push(path), 600)
 
 	useEffect(() => {
 
