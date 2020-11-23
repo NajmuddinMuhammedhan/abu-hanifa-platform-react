@@ -119,7 +119,7 @@
 	color: #000;
 }
 .browse > ul > li:nth-child(4n+3) > button {
-	background: #118ab2;
+	background: #1a659e;
 	color: #fff;
 }
 .browse > ul > li:nth-child(4n+4) > button {
@@ -157,7 +157,7 @@
 }
 @media screen and (max-width: 961px) {
 	.mainCourse .box {
-		border-radius: 3vmin;
+		border-radius: 5vmin;
 		min-height: calc(50vh - 10vmin);
 	}
 	.browse {
@@ -182,6 +182,10 @@
 		border-radius: 5vmin;
 	}
 	.browse > ul > li > button .name {
-		width: 120vmin;
+		font-size: 6vmin;
+		width: 45vmin;
+	}
+	.browse > ul > li > button:hover .name {
+		transform: translateY(-90%) scale(1.2);
 	}
 }
