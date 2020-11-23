@@ -4,6 +4,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	/*border-bottom: 0.5vmin solid #000;*/
+	/*background: #321325;*/
 }
 nav .menu {
 	display: flex;
@@ -26,7 +27,7 @@ nav .menu > li > button {
 	padding: 1vmin 2vmin;
 	border: 0.5vmin solid transparent;
 	background: #fff;
-	color: #14213d;
+	color: #001427;
 	border-radius: 1vmin;
 	align-items: center;
 	transition: border-color 250ms ease, color 250ms ease;

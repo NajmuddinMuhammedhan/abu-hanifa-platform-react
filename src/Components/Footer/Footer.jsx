@@ -4,7 +4,7 @@ function Footer () {
 
 	return (
 		<footer>
-			<p>© Copyright 2020</p>
+			<p>أكاديمية الإمام أبو حنيفة الإسلامية العالمية</p>
 		</footer>
 	)
 }
