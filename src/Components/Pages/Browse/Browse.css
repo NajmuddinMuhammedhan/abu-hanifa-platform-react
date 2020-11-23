@@ -13,6 +13,7 @@
 	/*border: 0.5vmin solid black;*/
 	padding: 4vmin 2vmin;
 	display: flex;
+	min-height: calc(50vh - 2vmin);
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -155,6 +156,10 @@
 	transition: transform 500ms ease, opacity 100ms ease;
 }
 @media screen and (max-width: 961px) {
+	.mainCourse .box {
+		border-radius: 3vmin;
+		min-height: calc(50vh - 10vmin);
+	}
 	.browse {
 		margin: 0;
 	}
