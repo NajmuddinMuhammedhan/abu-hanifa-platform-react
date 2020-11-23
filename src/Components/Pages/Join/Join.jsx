@@ -3,7 +3,9 @@ function Join () {
 	return (
 		<>
 			<div id="join">
-				JOIN
+				<div className="box">
+					JOIN
+				</div>
 			</div>
 		</>
 	)
