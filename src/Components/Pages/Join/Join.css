@@ -1,0 +1,37 @@
+#join {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(to bottom, #fff 0% 50%, #094062 50% 100%);
+}
+#join .main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1 0 auto;
+}
+#join .main .wrapper {
+	background: #fff;
+	filter: drop-shadow(0 0 0.5vmin rgba(0,0,0,0.3));
+	border-radius: 2vmin;
+	min-width: 120vh;
+	min-height: 60vh;
+	display: flex;
+	position: relative;
+}
+#join .main .wrapper > button {
+	background: #094062;
+	color: #fff;
+	filter: drop-shadow(0 0 0.5vmin rgba(0,0,0,0.3));
+	padding: 3vmin;
+	position: absolute;
+	left: calc(50% - 13vmin);
+	border-radius: 2vmin;
+	top: -13vmin;
+}
+#join .main .wrapper > button svg {
+	width: 18vmin;
+	height: 18vmin;
+	fill: currentColor;
+}
