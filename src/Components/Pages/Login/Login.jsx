@@ -7,7 +7,7 @@ import LANG from '../../Languages'
 function Login () {
 
 	const { push: route } = useHistory()
-	const [lang, setLanguage] = useLanguage()
+	const [lang, setLang] = useLanguage()
 
 	return (
 		<>
@@ -73,7 +73,7 @@ function Login () {
 									{
 										Object.keys(LANG).map((lancuageCode, i) => (
 											<li key={i}>
-												<button onClick={() => setLanguage(lancuageCode)}>{LANG[lancuageCode].name}</button>
+												<button onClick={() => setLang(lancuageCode)}>{LANG[lancuageCode].name}</button>
 											</li>
 										))
 									}

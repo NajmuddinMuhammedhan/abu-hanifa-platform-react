@@ -1,10 +1,14 @@
 import './Footer.css'
+import useLanguage from '../../Hooks/useLanguage'
+import TEXT from '../Localization'
 
 function Footer () {
 
+	const [lang] = useLanguage()
+
 	return (
 		<footer>
-			<p>أكاديمية الإمام أبو حنيفة الإسلامية العالمية</p>
+			<p>{TEXT[lang].common.name}</p>
 		</footer>
 	)
 }

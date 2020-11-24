@@ -5,12 +5,15 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter } from 'react-router-dom'
 import { LanguageProvider } from './Context/Language'
+import { ProfileProvider } from './Context/Profile'
 
 ReactDOM.render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<LanguageProvider>
-				<App />
+				<ProfileProvider>
+					<App />
+				</ProfileProvider>
 			</LanguageProvider>
 		</BrowserRouter>
 	</React.StrictMode>,
