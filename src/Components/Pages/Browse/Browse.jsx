@@ -5,7 +5,6 @@ import useLanguage from '../../../Hooks/useLanguage'
 import TEXT from '../../Localization'
 import useKeyPress from '../../../Hooks/useKeyPress'
 import Navigation from '../../Navigation/Navigation'
-import Footer from '../../Footer/Footer'
 
 function Browse () {
 
@@ -177,7 +176,6 @@ function Browse () {
 					</svg>
 				</button>
 			</div>
-			<Footer />
 		</>
 	)
 }

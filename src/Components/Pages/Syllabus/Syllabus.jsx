@@ -2,7 +2,6 @@ import { useRef, useState, useEffect } from 'react'
 import { useHistory, useParams, useLocation } from 'react-router-dom'
 import './Syllabus.css'
 import Navigation from '../../Navigation/Navigation'
-import Footer from '../../Footer/Footer'
 
 function Syllabus () {
 
@@ -129,7 +128,6 @@ function Syllabus () {
 					)
 				}
 			</div>
-			<Footer />
 		</>
 	)
 }

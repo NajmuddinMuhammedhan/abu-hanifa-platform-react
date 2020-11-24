@@ -1,5 +1,5 @@
 nav {
-	padding: 2vmin 4vmin;
+	padding: 2vmin 2vmin;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -24,18 +24,20 @@ nav .menu > li:last-child {
 }
 nav .menu > li > button {
 	font-size: 2.5vmin;
-	padding: 1vmin 2vmin;
-	border: 0.5vmin solid transparent;
-	background: #fff;
-	color: #001427;
+	padding: 1vmin 0;
 	border-radius: 1vmin;
 	align-items: center;
+	color: #1b669e;
+	background: linear-gradient(90deg,#028796 50%,#d5b03f);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	transition: border-color 250ms ease, color 250ms ease;
 }
 nav .menu > li > button svg {
 	width: 4vmin;
 	height: 4vmin;
 	fill: currentColor;
+	fill: url(#gradient-vertical);
 }
 nav .menu > li > button svg + span {
 	margin-left: 2vmin;
@@ -52,7 +54,6 @@ nav .menu > li > button span + svg {
 	margin-left: 2vmin;
 }
 nav .menu > li:hover > button {
-	border-color: #000;
 	color: #000;
 }
 nav .menu > li > div {

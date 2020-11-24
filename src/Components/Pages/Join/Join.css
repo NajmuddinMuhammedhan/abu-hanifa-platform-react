@@ -26,12 +26,12 @@
 	filter: drop-shadow(0 0 0.5vmin rgba(0,0,0,0.3));
 	padding: 3vmin;
 	position: absolute;
-	left: calc(50% - 13vmin);
+	left: calc(50% - 7vmin);
 	border-radius: 2vmin;
-	top: -13vmin;
+	top: -7vmin;
 }
 #join .main .wrapper > button svg {
-	width: 18vmin;
-	height: 18vmin;
+	width: 10vmin;
+	height: 10vmin;
 	fill: currentColor;
 }

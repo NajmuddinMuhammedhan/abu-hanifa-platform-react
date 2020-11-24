@@ -15,11 +15,18 @@
 	flex-wrap: wrap;
 }
 .profiles > ul li {
-	border: 0.5vmin solid black;
+	/*border: 0.5vmin solid black;*/
+	background: linear-gradient(90deg,#028796 50%,#d5b03f);
+	padding: 0.5vmin;
+	border-radius: 2vmin;
 	margin: 2vmin;
-	padding: 8vmin;
 	position: relative;
 	min-width: 30%;
+}
+.profiles > ul li div {
+	background: #fff;
+	padding: 8vmin;
+	border-radius: 1.5vmin;
 }
 .profiles > ul .delete,
 .profiles > ul .edit {
@@ -54,13 +61,18 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: #000;
+	color: #1b669e;
+	background: linear-gradient(90deg,#028796 50%,#d5b03f);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: border-color 250ms ease, color 250ms ease;
 }
 .profiles > ul .profile svg {
-	width: 15vmin;
-	height: 15vmin;
+	width: 5vmin;
+	height: 5vmin;
 	margin-bottom: 2vmin;
 	fill: currentColor;
+	/*fill: url(#gradient-vertical);*/
 }
 .profiles > ul .profile:hover {
 	color: #00BCD4;

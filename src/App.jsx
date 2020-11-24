@@ -13,6 +13,16 @@ import Syllabus from './Components/Pages/Syllabus/Syllabus'
 function App() {
 	return (
 		<>
+			<svg aria-hidden="true" focusable="false" style={{width: 0, height: 0, position: 'absolute'}}>
+				<linearGradient id="gradient-horizontal">
+					<stop offset="0%" stop-color="#028796"></stop>
+					<stop offset="100%" stop-color="#d5b03f"></stop>
+				</linearGradient>
+				<linearGradient id="gradient-vertical" x2="0" y2="1">
+					<stop offset="0%" stop-color="#028796"></stop>
+					<stop offset="100%" stop-color="#d5b03f"></stop>
+				</linearGradient>
+			</svg>
 			<main>
 				<Switch>
 					<Route path="/join" component={Join} exact />
