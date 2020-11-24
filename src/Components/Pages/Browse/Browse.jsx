@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react'
-import { useHistory, Redirect } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import './Browse.css'
 import useLanguage from '../../../Hooks/useLanguage'
 import TEXT from '../../Localization'
