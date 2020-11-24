@@ -75,7 +75,7 @@ function Browse () {
 					</svg>
 					<h1>{TEXT[lang].common.courseName}</h1>
 					<p>{TEXT[lang].common.courseDesc}</p>
-					<button>{TEXT[lang].common.read}</button>
+					<button onClick={() => route('/school')}>{TEXT[lang].common.read}</button>
 				</div>
 			</div>
 			<div ref={browseRef} className="browse">

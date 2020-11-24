@@ -22,6 +22,12 @@ const Localization = {
 			settings: 'إعدادات',
 			logout: 'تسجيل خروج',
 		},
+		school: {
+			stage1: 'المرحلة 1',
+			stage2: 'المرحلة 2',
+			stage3: 'المرحلة 3',
+			stage4: 'المرحلة 4',
+		},
 	},
 	tr: {
 		login: {
@@ -46,6 +52,12 @@ const Localization = {
 			settings: 'Ayarlar',
 			logout: 'Çıkış Yap',
 		},
+		school: {
+			stage1: 'Faz 1',
+			stage2: 'Faz 2',
+			stage3: 'Faz 3',
+			stage4: 'Faz 4',
+		},
 	},
 	uz: {
 		login: {
@@ -69,6 +81,12 @@ const Localization = {
 			account: 'Hisob',
 			settings: 'Sozlamlar',
 			logout: 'Chiqish',
+		},
+		school: {
+			stage1: '1 Bosqich',
+			stage2: '2 Bosqich',
+			stage3: '3 Bosqich',
+			stage4: '4 Bosqich',
 		},
 	},
 }
